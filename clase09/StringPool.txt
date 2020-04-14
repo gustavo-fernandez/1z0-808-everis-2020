@@ -1,0 +1,29 @@
+String a = new String("Hello").intern(); // -> x2
+// == compara objetos a nivel de memoria
+String b = new String("Hello").intern(); // -> x2
+
+"Hello" // String literal
+"Hello" + " World" + "!" // string-valued constant expressions
+// "Hello World!"
+
+new String(new char[]{'H','o','l','a'}).itern(); // -> x3
+new String(new char[]{'H','o','l','a'}).itern(); // -> x3
+
+String c = "World";
+
+
+/* String Pool
+====================
+x1 - HELLO
+x2 - Hello
+x3 - Hola
+x4 - World
+*/
+
+/* HEAP
+====================
+xD2 -> new String("Hello")
+xD3 -> new String("Hello")
+xD4 -> new String(new char[]{'H','o','l','a'})
+xD5 -> new String(new char[]{'H','o','l','a'})
+*/
