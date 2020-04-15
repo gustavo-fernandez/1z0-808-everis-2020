@@ -1,0 +1,21 @@
+java.lang.StringBuilder
+  append > StringBuilder
+  insert > StringBuilder
+  delete > StringBuilder
+  deleteCharAt > StringBuilder
+  reverse > StringBuilder
+  
+  setLength > void
+
+  length
+  capacity
+
+  ensureCapacity
+  trimeToSize
+
+  indexOf
+  lastIndexOf
+
+  subtring
+  subSequence
+  charAt
