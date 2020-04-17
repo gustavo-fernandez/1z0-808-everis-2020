@@ -1,0 +1,19 @@
+byte > 8 bits > 2 ^ 8 > Podemos almacenar 256 números
+short > 16 bits > 65536 > -32768 0 +32767
+int > 32 bits
+long > 64 bits
+
+byte > -128  0  127
+short > -32768   0     32767
+
+# Two complement
+
+
+char > 2 bytes > 16 bits > 65536 posibles valores > Range: 0 - 65535 (char solo permite números positivos)
+
+=============
+
+float 4 bytes   -> 1.2f
+double 8 bytes
+
+todos los literales de punto flotante son double por defecto
