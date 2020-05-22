@@ -1,0 +1,28 @@
+// Solo se heredan miembros de instancia
+interface I {
+  public static final int FIELD = 1;
+  public static void staticMethod() {}
+  public abstract void foo(); // De instancia
+  public default void bar() {
+    staticMethod();
+  } // De instancia
+}
+
+interface I {
+  [public static final] int FIELD = 1;
+  [public] static void staticMethod() {}
+  [public abstract] void foo();
+  [public] default void bar() {}
+}
+
+[Clase] extends [Solo una clase]
+[Clase] implements [Una o más interfaces]
+class C1 extends C2 implements I1, I2 {
+  /* C1() { super(); } */
+}
+
+[Interface] extends [Una o más interfaces]
+interface I0 extends I1, I2 {}
+
+
+public Object() {}
